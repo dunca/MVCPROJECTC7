@@ -20,10 +20,15 @@ namespace MvcProjectC7.Controllers
             return View();
         }
 
-        //[NonAction]
-        public ActionResult Calc()
+        [NonAction]
+        public int Calc()
         {
-            return Content(Enumerable.Range(1,10).Sum().ToString());
+            return Enumerable.Range(1,10).Sum();
+        }
+
+        public int DisplayCalc()
+        {
+            return Calc();
         }
     }
 }
