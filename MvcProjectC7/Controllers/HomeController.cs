@@ -19,5 +19,11 @@ namespace MvcProjectC7.Controllers
         {
             return View();
         }
+
+        //[NonAction]
+        public ActionResult Calc()
+        {
+            return Content(Enumerable.Range(1,10).Sum().ToString());
+        }
     }
 }
