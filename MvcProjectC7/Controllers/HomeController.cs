@@ -37,5 +37,12 @@ namespace MvcProjectC7.Controllers
         {
             return Content("Hello");
         }
+
+        [ActionName("authorize")]
+        [Authorize(Roles = "Admin")]
+        public ActionResult ThisMethodNeedsAuthorization()
+        {
+            return Content("Hello from ThisMethodNeedsAuthorization");
+        }
     }
 }
