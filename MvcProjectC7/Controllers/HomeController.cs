@@ -14,9 +14,10 @@ namespace MvcProjectC7.Controllers
             return Content("Hello from Index");
         }
 
+        [ActionName("About")]
         public ActionResult SomeMethodName()
         {
-            return Content("Hello from SomeMethodName");
+            return View();
         }
     }
 }
