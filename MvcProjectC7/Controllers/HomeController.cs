@@ -30,5 +30,12 @@ namespace MvcProjectC7.Controllers
         {
             return Calc();
         }
+
+        //[HttpPost]
+        [HttpGet]
+        public ActionResult VerbsTest()
+        {
+            return Content("Hello");
+        }
     }
 }
